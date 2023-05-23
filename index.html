@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Catamaran:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@300;400;500;900&family=Open+Sans:wght@300&family=Outfit&family=Poppins:ital,wght@1,300;1,900&display=swap" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <div class="cover">
+    <div class="align">
+      <form>
+        <div class="form_container">
+          <div class="block">
+            <h4>DAY</h4>
+            <input type="number" id="day" placeholder="DD">
+            <small></small>
+          </div>
+          <div class="block">
+            <h4>MONTH</h4>
+            <input type="number" id="month" placeholder="MM">
+            <small></small>
+          </div>
+          <div class="block">
+            <h4>YEAR</h4>
+            <input type="number" id="year" placeholder="YYYY">
+            <small></small>
+          </div>
+        </div>
+        <div class="submit_block">
+          <hr>
+          <button type="submit" class="submit_btn"><img src="./assets/images/icon-arrow.svg" alt="icon"></button>
+        </div>
+      </form>
+      <div class="last">
+        <h3><span id="YY">--</span> years</h3>
+        <h3><span id="MM">--</span> months</h3>
+        <h3><span id="DD">--</span> days</h3>
+      </div>
+    </div>
+  </div>
+  <script src="index.js" defer></script>
+</body>
+</html>
