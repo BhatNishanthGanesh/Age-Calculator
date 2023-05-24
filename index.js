@@ -55,19 +55,22 @@ function handleSubmit(e) {
     const inputMonth = parseInt(monthInp.value);
     const inputYear = parseInt(yearInp.value);
 
+    let calday=day;
+    let calmonth=month;
+    let calyear=year;
     if (inputDay > day) {
-      day += months[month - 1];
-      month -= 1;
+      cal += months[month - 1];
+      calmonth -= 1;
     }
 
     if (inputMonth > month) {
-      month += 12;
-      year -= 1;
+      calmonth += 12;
+      calyear -= 1;
     }
 
-    const d = day - inputDay;
-    const m = month - inputMonth;
-    const y = year - inputYear;
+    const d = calday - inputDay;
+    const m = calmonth - inputMonth;
+    const y = calyear - inputYear;
 
     dayOtp.innerHTML = d;
     monthOtp.innerHTML = m;
